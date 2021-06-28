@@ -1,19 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Raleway:wght@100;200;300;400&display=swap');
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-    background-color: #0A77A6;
     color: #FFFFFF;
     font-family: Raleway, sans-serif;
 }
 
-#navbar {
-    position: auto;
-    width: 100%;
+body {
+    background-color: #0A77A6;
 }
 
-#home {
-    position: auto;
+nav {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #114254;
+}
+
+#logo {
+    font-size: 25;
+}
+
+#links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    list-style: none;
+    font-weight: bold;
+}
+
+#links a {
+    text-decoration: none;
+}
+
+.home {}
+
+.home h1 {
+    font-size: 5rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.home p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+.about {}
+
+.projects {}
+
+footer {
+    padding-top: 20rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
 }
