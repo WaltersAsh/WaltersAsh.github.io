@@ -20,6 +20,7 @@ nav {
     align-items: center;
     min-height: 8vh;
     background-color: #114254;
+    z-index: 1;
 }
 
 nav a:hover, h3:hover {
@@ -55,15 +56,22 @@ nav a:hover, h3:hover {
     transition: all 0.5s ease;
 }
 
-.home {}
+.home {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/background.jpg") center/cover no-repeat;
+    min-height: 100%;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
 
 .home h1 {
     font-size: 5rem;
-    padding-top: 2rem;
+    padding-top: 10rem;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom: 2rem;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .home p {
@@ -76,14 +84,18 @@ nav a:hover, h3:hover {
     text-align: center;
 }
 
-.about {}
+.about {
+    opacity: 0;
+}
 
-.projects {}
+.projects {
+    opacity: 0;
+}
 
 footer {
     background-color: #114254;
     padding-top: 1000;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
     height: 60px;
@@ -100,15 +112,16 @@ footer {
     .nav-links {
         position: absolute;
         right: 0px;
-        height: 92vh;
+        height: 85vh;
         top: 8vh;
         background-color: #114254;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 50%;
+        width: 33%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+        z-index: 1;
     }
     .nav-links li {
         opacity: 0;
@@ -116,6 +129,12 @@ footer {
     .nav-menu-button {
         display: block;
         cursor: pointer;
+    }
+}
+
+@media screen and (max-width:426px) {
+    .nav-links {
+        width: 50%;
     }
 }
 
