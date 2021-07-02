@@ -19,8 +19,15 @@ function mobileNav() {
 
 }
 
+function endSpinner() {
+    const spin = document.querySelector('.spin-wrapper');
+    spin.parentElement.removeChild(spin);
+    document.querySelector('body').classList.add('fade');
+}
+
 function main() {
     mobileNav();
+    setTimeout(function () { endSpinner(); }, 1500);
 }
 
 main();

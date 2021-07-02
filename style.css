@@ -14,6 +14,50 @@ body {
     padding-bottom: 60px;
 }
 
+.spin-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #114254;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    animation: rotate infinite linear;
+    width: 60px;
+    height: 60px;
+    border: 12px solid #FFFFFF;
+    border-bottom: 12px solid #114254;
+    border-radius: 50%;
+    animation: spin .5s infinite linear;
+    box-shadow: 0 0 2px #FFFFFF;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.fade {
+    animation: fade 0.9s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 nav {
     display: flex;
     justify-content: space-around;
