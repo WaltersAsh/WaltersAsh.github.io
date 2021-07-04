@@ -25,9 +25,26 @@ function endSpinner() {
     document.querySelector('body').classList.add('fade');
 }
 
+function showPages(homePageStatus, aboutPageStatus, projectsPageStatus) {
+    var home = document.getElementsByClassName('home');
+    var about = document.getElementsByClassName('about');
+    var projects = document.getElementsByClassName('projects');
+
+    for (var i = 0; i < home.length; i++) {
+        home[i].style.display = homePageStatus;
+    }
+    for (var i = 0; i < about.length; i++) {
+        about[i].style.display = aboutPageStatus;
+    }
+    for (var i = 0; i < projects.length; i++) {
+        projects[i].style.display = projectsPageStatus;
+    }
+}
+
 function main() {
     mobileNav();
-    setTimeout(function () { endSpinner(); }, 1500);
+    setTimeout(function() { endSpinner(); }, 1500);
+    document.querySelector('body').classList.remove('fade');
 }
 
 main();

@@ -10,7 +10,6 @@
     <title>Justin Joe</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://kit.fontawesome.com/8a62689a36.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
@@ -25,13 +24,13 @@
 
         <ul class="nav-links">
             <li>
-                <a href="#">Home</a>
+                <a onclick="showPages('block', 'none', 'none')">Home</a>
             </li>
             <li>
-                <a href="#">About</a>
+                <a onclick="showPages('none', 'block', 'none')">About</a>
             </li>
             <li>
-                <a href="#">Projects</a>
+                <a onclick="showPages('none', 'none', 'block')">Projects</a>
             </li>
         </ul>
 
@@ -42,7 +41,7 @@
         </div>
     </nav>
 
-    <section class="home">
+    <div class="home">
         <div class="title">
             <h1>Heyo, I'm Justin.</h1>
         </div>
@@ -53,18 +52,18 @@
             </p>
         </div>
 
-    </section>
+    </div>
 
-    <section class="about">
+    <div class="about">
         <h2>About Me</h2>
-    </section>
+    </div>
 
-    <section class="projects">
+    <div class="projects">
         <h2>My Projects</h2>
-    </section>
+    </div>
 
     <footer>
-        <p>Created by Justin Joe 2021</p>
+        <p>Justin Joe 2021</p>
     </footer>
 
     <script src="app.js"></script>

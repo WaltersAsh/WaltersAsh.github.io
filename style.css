@@ -67,7 +67,8 @@ nav {
     z-index: 1;
 }
 
-nav a:hover, h3:hover {
+nav a:hover,
+h3:hover {
     text-shadow: 0 0 1.5px #FFFFFF;
 }
 
@@ -86,6 +87,7 @@ nav a:hover, h3:hover {
 
 .nav-links a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .nav-menu-button {
@@ -129,11 +131,11 @@ nav a:hover, h3:hover {
 }
 
 .about {
-    opacity: 0;
+    display: none;
 }
 
 .projects {
-    opacity: 0;
+    display: none;
 }
 
 footer {
@@ -148,7 +150,8 @@ footer {
 }
 
 @media screen and (max-width:769px) {
-    html, body {
+    html,
+    body {
         overflow-x: hidden;
         height: 100%;
         position: relative;
