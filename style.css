@@ -123,11 +123,22 @@ h3:hover {
 .home p {
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 0.25rem;
 }
 
 .blurb {
     text-align: center;
+    font-size: 1.1rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.icons td {
+    padding: 1rem;
 }
 
 .about {
