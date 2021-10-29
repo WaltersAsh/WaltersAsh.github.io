@@ -143,10 +143,29 @@ h3:hover {
 
 .about {
     display: none;
+    padding: 2.5%;
 }
 
 .projects {
     display: none;
+    padding: 2.5%;
+}
+
+.projects h2 {
+    padding-bottom: 3rem;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 20px;
+}
+
+.project-card {
+    text-align: center;
+    padding-bottom: 20rem;
+    background-color: #114254;
+    border: 0.25rem solid #f2f2ce;
 }
 
 footer {
